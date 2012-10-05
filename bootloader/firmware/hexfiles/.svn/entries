@@ -1,0 +1,121 @@
+9
+
+dir
+0
+https://code.goto10.org/svn/micro_research/trunk/byron/bootloader/USBaspLoader.2010-07-27/firmware/hexfiles
+https://code.goto10.org/svn/micro_research
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+mega168_15mhz.hex
+file
+
+
+
+add
+
+mega168_16mhz.hex
+file
+
+
+
+add
+
+mega328p_20mhz.hex
+file
+
+
+
+add
+
+mega328p_12mhz.hex
+file
+
+
+
+add
+
+mega88_20mhz.hex
+file
+
+
+
+add
+
+mega328p_15mhz.hex
+file
+
+
+
+add
+
+mega88_12mhz.hex
+file
+
+
+
+add
+
+mega328p_16mhz.hex
+file
+
+
+
+add
+
+mega88_15mhz.hex
+file
+
+
+
+add
+
+mega88_16mhz.hex
+file
+
+
+
+add
+
+mega8_12mhz.hex
+file
+
+
+
+add
+
+mega8_15mhz.hex
+file
+
+
+
+add
+
+mega8_16mhz.hex
+file
+
+
+
+add
+
+mega168_20mhz.hex
+file
+
+
+
+add
+
+mega168_12mhz.hex
+file
+
+
+
+add
+

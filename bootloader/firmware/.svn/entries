@@ -1,0 +1,79 @@
+9
+
+dir
+0
+https://code.goto10.org/svn/micro_research/trunk/byron/bootloader/USBaspLoader.2010-07-27/firmware
+https://code.goto10.org/svn/micro_research
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+usbdrv
+dir
+
+
+
+add
+
+usbconfig.h
+file
+
+
+
+add
+
+main.c
+file
+
+
+
+add
+
+bootloaderconfig.h
+file
+
+
+
+add
+
+main.hex
+file
+
+
+
+add
+
+hexfiles
+dir
+
+
+
+add
+
+main.bin
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+Makefile
+file
+
+
+
+add
+

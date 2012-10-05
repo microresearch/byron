@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/micro_research/!svn/ver/175/trunk/byron/bootloader/byronjump
+END
+opendevice.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/micro_research/!svn/ver/175/trunk/byron/bootloader/byronjump/opendevice.c
+END
+Makefile.windows
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/micro_research/!svn/ver/175/trunk/byron/bootloader/byronjump/Makefile.windows
+END
+byronjump.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/micro_research/!svn/ver/199/trunk/byron/bootloader/byronjump/byronjump.c
+END
+opendevice.h
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/micro_research/!svn/ver/175/trunk/byron/bootloader/byronjump/opendevice.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/micro_research/!svn/ver/176/trunk/byron/bootloader/byronjump/Makefile
+END
+set-led.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/micro_research/!svn/ver/175/trunk/byron/bootloader/byronjump/set-led.c
+END

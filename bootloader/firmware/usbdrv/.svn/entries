@@ -1,0 +1,170 @@
+9
+
+dir
+0
+https://code.goto10.org/svn/micro_research/trunk/byron/bootloader/USBaspLoader.2010-07-27/firmware/usbdrv
+https://code.goto10.org/svn/micro_research
+add
+
+
+
+
+
+
+
+svn:special svn:externals svn:needs-lock
+
+usbdrvasm20.inc
+file
+
+
+
+add
+
+usbdrvasm12.inc
+file
+
+
+
+add
+
+usbdrvasm15.inc
+file
+
+
+
+add
+
+usbdrvasm16.inc
+file
+
+
+
+add
+
+usbdrvasm.asm
+file
+
+
+
+add
+
+usbdrv.c
+file
+
+
+
+add
+
+USB-IDs-for-free.txt
+file
+
+
+
+add
+
+oddebug.c
+file
+
+
+
+add
+
+usbdrv.h
+file
+
+
+
+add
+
+CommercialLicense.txt
+file
+
+
+
+add
+
+usbdrvasm18-crc.inc
+file
+
+
+
+add
+
+oddebug.h
+file
+
+
+
+add
+
+License.txt
+file
+
+
+
+add
+
+asmcommon.inc
+file
+
+
+
+add
+
+usbportability.h
+file
+
+
+
+add
+
+Changelog.txt
+file
+
+
+
+add
+
+USB-ID-FAQ.txt
+file
+
+
+
+add
+
+usbdrvasm.S
+file
+
+
+
+add
+
+usbconfig-prototype.h
+file
+
+
+
+add
+
+usbdrvasm128.inc
+file
+
+
+
+add
+
+usbdrvasm165.inc
+file
+
+
+
+add
+
+Readme.txt
+file
+
+
+
+add
+
