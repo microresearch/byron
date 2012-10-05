@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/micro_research/!svn/ver/178/trunk/byron/keyboard
+END
+License.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/micro_research/!svn/ver/178/trunk/byron/keyboard/License.txt
+END
+Changelog.txt
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/micro_research/!svn/ver/178/trunk/byron/keyboard/Changelog.txt
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/micro_research/!svn/ver/198/trunk/byron/keyboard/main.c
+END
+usbconfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/micro_research/!svn/ver/183/trunk/byron/keyboard/usbconfig.h
+END
+main.hex
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/micro_research/!svn/ver/198/trunk/byron/keyboard/main.hex
+END
+checksize
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/micro_research/!svn/ver/178/trunk/byron/keyboard/checksize
+END
+Readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/micro_research/!svn/ver/178/trunk/byron/keyboard/Readme.txt
+END
+main.bin
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/micro_research/!svn/ver/198/trunk/byron/keyboard/main.bin
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/micro_research/!svn/ver/183/trunk/byron/keyboard/Makefile
+END

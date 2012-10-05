@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/micro_research/!svn/ver/178/trunk/byron/keyboard/usbdrv
+END
+oddebug.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/micro_research/!svn/ver/178/trunk/byron/keyboard/usbdrv/oddebug.h
+END
+License.txt
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/micro_research/!svn/ver/178/trunk/byron/keyboard/usbdrv/License.txt
+END
+USBID-License.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/micro_research/!svn/ver/178/trunk/byron/keyboard/usbdrv/USBID-License.txt
+END
+Changelog.txt
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/micro_research/!svn/ver/178/trunk/byron/keyboard/usbdrv/Changelog.txt
+END
+iarcompat.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/micro_research/!svn/ver/178/trunk/byron/keyboard/usbdrv/iarcompat.h
+END
+usbdrvasm.asm
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/micro_research/!svn/ver/178/trunk/byron/keyboard/usbdrv/usbdrvasm.asm
+END
+usbdrv.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/micro_research/!svn/ver/178/trunk/byron/keyboard/usbdrv/usbdrv.c
+END
+usbdrvasm.S
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/micro_research/!svn/ver/178/trunk/byron/keyboard/usbdrv/usbdrvasm.S
+END
+usbconfig-prototype.h
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/micro_research/!svn/ver/178/trunk/byron/keyboard/usbdrv/usbconfig-prototype.h
+END
+oddebug.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/micro_research/!svn/ver/178/trunk/byron/keyboard/usbdrv/oddebug.c
+END
+Readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/micro_research/!svn/ver/178/trunk/byron/keyboard/usbdrv/Readme.txt
+END
+usbdrv.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/micro_research/!svn/ver/178/trunk/byron/keyboard/usbdrv/usbdrv.h
+END
+CommercialLicense.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/micro_research/!svn/ver/178/trunk/byron/keyboard/usbdrv/CommercialLicense.txt
+END

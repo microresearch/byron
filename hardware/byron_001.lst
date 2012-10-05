@@ -1,0 +1,23 @@
+EESchema (2007-11-29-a)  >> Creation date: 12/2/2010-10:03:41
+
+#Cmp ( order = Reference )
+| C2         22 PF       
+| C3         22PF        
+| C4         100nF       
+| CP1        CP10uF      
+| I1         ATMEGA8     
+| P10        CONN_10     
+| P11        CONN_10     
+| P12        CONN_3X2    
+| P13        CONN_1      
+| P9         CONN_5X2    
+| R1         R10K        
+| R2         330         
+| R3         330         
+| R4         4.7K        
+| R5         2.2K        
+| X1         CRYSTAL     
+| X2         USB-MB-H    
+#End Cmp
+
+#End List

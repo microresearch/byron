@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/micro_research/!svn/ver/157/trunk/byron/puredata
+END
+byron.help.pd
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/micro_research/!svn/ver/198/trunk/byron/puredata/byron.help.pd
+END
+byronhimself.pd
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/micro_research/!svn/ver/199/trunk/byron/puredata/byronhimself.pd
+END
+avrpwm.help.pd
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/micro_research/!svn/ver/158/trunk/byron/puredata/avrpwm.help.pd
+END
+m_pd.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/micro_research/!svn/ver/158/trunk/byron/puredata/m_pd.h
+END
+m_imp.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/micro_research/!svn/ver/158/trunk/byron/puredata/m_imp.h
+END
+byron.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/micro_research/!svn/ver/198/trunk/byron/puredata/byron.c
+END
+avrpwm.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/micro_research/!svn/ver/158/trunk/byron/puredata/avrpwm.c
+END
+avrpwm.pd_linux
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/micro_research/!svn/ver/158/trunk/byron/puredata/avrpwm.pd_linux
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/micro_research/!svn/ver/164/trunk/byron/puredata/makefile
+END

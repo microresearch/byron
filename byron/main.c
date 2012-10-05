@@ -1,0 +1,188 @@
+#include "byron.h"
+#include <stdio.h>
+#include <inttypes.h>
+#include <avr/wdt.h>
+#include <avr/delay.h>
+
+unsigned long __attribute__ ((section (".BOOTSTART"))) bootStart;
+
+#define F_OSC 12000000
+#define UART_BAUD_RATE 9600
+#define ADC_PAUSE 		10
+#define LED_KEEP_ALIVE	100  
+#define USB_REPLY_BBBB 8
+#define USB_REPLY_DDDD 9	
+#define DDR(x) ((x)-1)
+
+static u08		ad_mux;
+static u16		ad_values[8];
+static u08		ad_smoothing;
+static u08		ad_samplepause;
+static u08		usb_reply[12];
+static unsigned char lastvalue;
+
+uchar usbFunctionSetup(uchar data[8])
+{
+	
+  switch (data[1]) {
+	  
+  case BYRON_START_BOOTLOADER:
+    cli();
+    USB_INTR_ENABLE = 0;
+    USB_INTR_CFG = 0;       /* also reset config bits */
+    GICR = (1 << IVCE);  /* enable change of interrupt vectors */
+    GICR = (1 << IVSEL); /* move interrupts to boot flash section */
+
+    bootStart = 0x55AA1177;      // Bootloader start from application
+    for(;;);   // Reset from watchdog
+    break;
+
+		
+  case BYRON_CMD_POLL:    
+    usbMsgPtr = usb_reply;
+    return sizeof(usb_reply);
+    break;
+
+  case BYRON_CMD_SET_SMOOTHING:		
+    if (data[2] > 15) ad_smoothing = 15;
+    else ad_smoothing = data[2];
+    break;
+
+  case BYRON_CMD_LOWER_IN:
+    // PB0 PD5 6 7 
+    // NOT-pullups are here
+    DDRB &= ~(0x01); DDRD &= ~(0xE0);
+    //    PORTB |=0x01; PORTB |= 0xE0;
+    break;
+
+  case BYRON_CMD_LOWER_OUT:
+    // PB0 PD5 6 7 
+    DDRB |= (0x01); DDRD |= 0xE0;
+    // 4 bits:    PORTB = data[2];
+    PORTB = (PORTB&0xFE) | (data[2] & 0x01); PORTD = (PORTD&0x1F) | ((data[2]>>1)&7)<<5 ; //5,6,7
+    usb_reply[USB_REPLY_DDDD] = data[2];
+    break;
+			
+  case BYRON_CMD_SET_PWM0:
+    OCR1A=data[2];
+    lastvalue=data[2];
+    usb_reply[USB_REPLY_BBBB] = data[2];
+    break;
+
+  case BYRON_CMD_SET_PWM1:
+    usb_reply[USB_REPLY_BBBB] = data[2];
+    OCR1B=data[2];
+    break;
+
+  case BYRON_CMD_SET_PWM2:
+    usb_reply[USB_REPLY_BBBB] = data[2];
+    OCR2=data[2];
+    break;
+  } 
+  return 0;
+}
+
+void checkAnlogPorts (void) {
+  unsigned int temp,replymask,replyshift,replybyte;
+	
+  if (ad_samplepause != 0xff) {													
+    if (ad_samplepause < ADC_PAUSE) {
+      ad_samplepause++;
+    } else {
+      ad_StartConversion();
+      ad_samplepause = 0xff;
+    }
+  } else {
+
+    if ( ad_ConversionComplete() ) {								temp = ad_Read10bit();									ad_values[ad_mux] = (ad_values[ad_mux] * ad_smoothing + temp) / (ad_smoothing + 1);
+      usb_reply[ad_mux] = ad_values[ad_mux] >> 2;
+      replybyte = 10 + (ad_mux / 4);	
+      replyshift = ((ad_mux % 4) * 2);
+      replymask = (3 << replyshift);	
+      usb_reply[replybyte] =	
+	(usb_reply[replybyte] & ~replymask) | (replymask & (ad_values[ad_mux] << replyshift));
+	
+      ad_mux = (ad_mux + 1) % 8;
+      ad_SetChannel(ad_mux);
+      ad_samplepause = 0;									
+    }
+  }
+}
+
+void checkDigitalPorts(void) {
+  int state;
+  if ((DDRB&0x01)==0x00) {
+    // PB0 PD5 6 7
+
+    state=(PINB&0x01) + ((PIND&0x20)>>4) + ((PIND&0x40)>>4) + ((PIND&0x80)>>4);
+    usb_reply[USB_REPLY_DDDD]=state;
+  }
+}
+
+int main(void)
+{
+  long count; uchar i,j;
+
+ 
+  GICR = _BV(IVCE);
+  GICR = 0x00;
+
+  bootStart = 0x00000000;
+  DDRC 	= 0x00;
+  PORTC 	= 0x00;
+
+
+  wdt_enable(WDTO_1S);
+  usbInit();
+  usbDeviceDisconnect();  /* enforce re-enumeration, do this while interrupts are disabled! */
+  i = 0;
+  while(--i){             /* fake USB disconnect for > 250 ms */
+    wdt_reset();
+    _delay_ms(1);
+  }
+  usbDeviceConnect();
+  sei();
+
+  initCoreHardware(); // now just for adc - clean up all
+
+
+
+  // init pwm stuff
+
+  //	  TCCR1A =  _BV(WGM10) | _BV(COM1A1) | _BV(COM1B1); 
+  //	  TCCR1B =  _BV(CS11) | _BV(WGM12); 
+  // to try
+  TCCR1A =  _BV(WGM10) | _BV(COM1A1) | _BV(COM1B1); // slow pwm 8 bit
+  TCCR1B =  _BV(CS10) | _BV(CS12); // /1024
+
+  DDRB = _BV(PB1) | _BV(PB2) | _BV(PB3);  // have to set up pins as outputs
+  DDRB=0xff;
+  //	  	    TCCR1A = _BV(COM1A1) | _BV(WGM10);
+
+  //third pwm
+
+  // Set 8 bit phase correct PWM Mode for channel 3
+  //	  TCCR2 = _BV(WGM21) | _BV(CS20) | _BV(COM21);
+	  
+  TCCR2 |=  (1 << WGM20);
+  TCCR2 &= ~(1 << WGM21);
+
+  // Clock select channel 3
+  TCCR2 |= (1 << CS21);
+  //TCCR2 &= ~(1 << CS21);
+
+  // Connect output Pin channel 3
+  TCCR2 &= ~(1 << COM20);
+  TCCR2 |= (1 << COM21);
+  TCNT1=0;
+  count=0;
+  while(1) {
+    usbPoll();
+    checkAnlogPorts();
+    checkDigitalPorts();
+    wdt_reset();
+
+  }
+  return 0;
+}
+

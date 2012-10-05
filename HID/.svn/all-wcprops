@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/micro_research/!svn/ver/158/trunk/byron/HID
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/micro_research/!svn/ver/183/trunk/byron/HID/main.c
+END
+usbconfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/micro_research/!svn/ver/183/trunk/byron/HID/usbconfig.h
+END
+global.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/micro_research/!svn/ver/158/trunk/byron/HID/global.h
+END
+a2d.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/micro_research/!svn/ver/158/trunk/byron/HID/a2d.c
+END
+avrlibdefs.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/micro_research/!svn/ver/158/trunk/byron/HID/avrlibdefs.h
+END
+avrlibtypes.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/micro_research/!svn/ver/158/trunk/byron/HID/avrlibtypes.h
+END
+a2d.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/micro_research/!svn/ver/158/trunk/byron/HID/a2d.h
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/micro_research/!svn/ver/183/trunk/byron/HID/Makefile
+END

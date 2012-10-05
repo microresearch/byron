@@ -1,0 +1,178 @@
+# EESchema Netlist Version 1.1 created  22/1/2010-16:59:35
+(
+ ( 46F128F9 SM0805 C2 22_PF
+  ( 1 GND )
+  ( 2 N-000029 )
+ )
+ ( 46F12905 SM0805 C3 22PF
+  ( 1 GND )
+  ( 2 N-000028 )
+ )
+ ( 47CD6D01 SM0805 C4 100nF
+  ( 1 N-000019 )
+  ( 2 GND )
+ )
+ ( 45F58D29 SM1206POL CP1 CP10uF
+  ( 1 GND )
+  ( 2 N-000019 )
+ )
+ ( 480CA292 TQFP32 I1 ATMEGA8
+  ( 1 N-000016 )
+  ( 2 N-000020 )
+  ( 3 GND )
+  ( 4 N-000019 )
+  ( 5 GND )
+  ( 6 N-000019 )
+  ( 7 N-000029 )
+  ( 8 N-000028 )
+  ( 9 N-000008 )
+  ( 10 N-000007 )
+  ( 11 N-000024 )
+  ( 12 N-000023 )
+  ( 13 N-000009 )
+  ( 14 N-000021 )
+  ( 15 N-000012 )
+  ( 16 N-000002 )
+  ( 17 N-000018 )
+  ( 18 N-000019 )
+  ( 19 N-000025 )
+  ( 20 N-000001 )
+  ( 21 GND )
+  ( 22 N-000003 )
+  ( 23 N-000014 )
+  ( 24 N-000006 )
+  ( 25 N-000011 )
+  ( 26 N-000005 )
+  ( 27 N-000015 )
+  ( 28 N-000004 )
+  ( 29 N-000030 )
+  ( 30 N-000010 )
+  ( 31 N-000022 )
+  ( 32 N-000020 )
+ )
+ ( 480CA390 PIN_ARRAY_5x2 P9 CONN_5X2
+  ( 1 N-000012 )
+  ( 2 N-000019 )
+  ( 3 ? )
+  ( 4 GND )
+  ( 5 N-000021 )
+  ( 6 GND )
+  ( 7 N-000018 )
+  ( 8 GND )
+  ( 9 N-000002 )
+  ( 10 GND )
+ )
+ ( 4B4DFA29 SIL-10 P10 CONN_10
+  ( 1 GND )
+  ( 2 N-000010 )
+  ( 3 N-000022 )
+  ( 4 N-000009 )
+  ( 5 N-000021 )
+  ( 6 N-000012 )
+  ( 7 N-000023 )
+  ( 8 N-000008 )
+  ( 9 N-000007 )
+  ( 10 N-000024 )
+ )
+ ( 4B4DFA24 SIL-10 P11 CONN_10
+  ( 1 GND )
+  ( 2 N-000019 )
+  ( 3 N-000014 )
+  ( 4 N-000006 )
+  ( 5 N-000011 )
+  ( 6 N-000005 )
+  ( 7 N-000015 )
+  ( 8 N-000004 )
+  ( 9 N-000025 )
+  ( 10 N-000003 )
+ )
+ ( 4B507841 pin_array_3x2 P12 CONN_3X2
+  ( 1 N-000021 )
+  ( 2 N-000030 )
+  ( 3 N-000011 )
+  ( 4 GND )
+  ( 5 N-000002 )
+  ( 6 GND )
+ )
+ ( 4B59D8EA PIN_ARRAY_2X1 P13 CONN_1
+  ( 1 N-000001 )
+ )
+ ( 45F58CF8 SM0805 R1 R10K
+  ( 1 N-000019 )
+  ( 2 N-000030 )
+ )
+ ( 47CD6B97 SM0805 R2 330
+  ( 1 N-000020 )
+  ( 2 N-000013 )
+ )
+ ( 47CD6BAA SM0805 R3 330
+  ( 1 N-000016 )
+  ( 2 N-000017 )
+ )
+ ( 47CD6BAF SM0805 R4 4.7K
+  ( 1 GND )
+  ( 2 N-000016 )
+ )
+ ( 47CD6BB3 SM0603 R5 2.2K
+  ( 1 N-000019 )
+  ( 2 N-000016 )
+ )
+ ( 46F128E4 Q_49U3HMS X1 CRYSTAL
+  ( 1 N-000029 )
+  ( 2 N-000028 )
+ )
+ ( 47CD721C CON-USB-USB-B-H X2 USB-MB-H
+  ( D+ N-000013 )
+  ( D- N-000017 )
+  ( GND GND )
+  ( VBUS N-000019 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component CP1
+ CP*
+ SM*
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+$endlist
+$endfootprintlist
+}

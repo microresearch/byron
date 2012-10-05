@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware
+END
+main.c.pwmbrd
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/main.c.pwmbrd
+END
+clock.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/clock.h
+END
+isp.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/isp.h
+END
+main.c.minia
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/main.c.minia
+END
+usbconfig.h.minia
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/usbconfig.h.minia
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/micro_research/!svn/ver/183/trunk/byron/programmer/firmware/main.c
+END
+usbconfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/micro_research/!svn/ver/184/trunk/byron/programmer/firmware/usbconfig.h
+END
+clock.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/clock.c
+END
+isp.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/isp.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/micro_research/!svn/ver/183/trunk/byron/programmer/firmware/Makefile
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/micro_research/!svn/ver/199/trunk/byron/MIDI
+END
+main.o
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/micro_research/!svn/ver/199/trunk/byron/MIDI/main.o
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/micro_research/!svn/ver/199/trunk/byron/MIDI/main.c
+END
+usbconfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/micro_research/!svn/ver/199/trunk/byron/MIDI/usbconfig.h
+END
+main.hex
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/micro_research/!svn/ver/199/trunk/byron/MIDI/main.hex
+END
+checksize
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/micro_research/!svn/ver/199/trunk/byron/MIDI/checksize
+END
+Makefile~
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/micro_research/!svn/ver/199/trunk/byron/MIDI/Makefile~
+END
+main.bin
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/micro_research/!svn/ver/199/trunk/byron/MIDI/main.bin
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/micro_research/!svn/ver/199/trunk/byron/MIDI/Makefile
+END

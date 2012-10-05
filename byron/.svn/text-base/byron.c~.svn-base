@@ -1,0 +1,101 @@
+// ==============================================================================
+// gnusbcore.c
+// globals and utilities for gnusbCore - OPEN SOURCE USB SENSOR BOX
+//
+// License:
+// The project is built with AVR USB driver by Objective Development, which is
+// published under an own licence based on the GNU General Public License (GPL).
+// usb2dmx is also distributed under this enhanced licence. See Documentation.
+//
+// target-cpu: ATMega16 @ 12MHz
+// created 2007-01-28 Michael Egger me@anyma.ch
+//
+
+// ==============================================================================
+// includes
+// ------------------------------------------------------------------------------
+// AVR Libc (see http://www.nongnu.org/avr-libc/)
+#include <avr/io.h>			// include I/O definitions (port names, pin names, etc)
+#include <avr/interrupt.h>	// include interrupt support
+
+// USB driver by Objective Development (see http://www.obdev.at/products/avrusb/index.html)
+#include "usbdrv.h"
+
+// local includes
+#include "gnusb.h"		// gnusb setup and utility functions 
+
+
+// ------------------------------------------------------------------------------
+// - ADC Utilities
+// ------------------------------------------------------------------------------
+int ad_ConversionComplete (void) {
+	return (!(ADCSRA & (1 << ADSC)));
+}
+
+ int ad_Read10bit (void) {
+ 	return (ADCL | ADCH << 8);
+ }
+ 
+ int ad_Read8bit (void) {
+ 	return ad_Read10bit() >> 2;
+ }
+ 
+ void ad_SetChannel (uchar mux) {
+ 	ADMUX = (ADMUX & ~ADC_MUX_MASK) | (mux & ADC_MUX_MASK);		// set channel
+ }
+ 
+ void ad_StartConversion () {
+ 			ADCSRA |= (1 << ADIF);			// clear hardware "conversion complete" flag 
+			ADCSRA |= (1 << ADSC);			// start conversion
+}
+
+// ------------------------------------------------------------------------------
+// - USB Reset
+// ------------------------------------------------------------------------------
+// Set USB- and USB+ Pins to output and pull them low for more than 10ms
+
+ void usbReset(void) {
+ 	u08  i, j;
+ 	
+	USBOUT &= ~USBMASK;	// make sure USB pins are pulled low 	
+ 	USBDDR |= USBMASK;	// set USB pins to output -> SE0
+ 	
+    j = 0;
+    while(--j) {       
+        i = 0;
+        while(--i);     // delay >10ms for USB reset
+    }
+ 
+    USBDDR &= ~USBMASK; // set USB pins to input
+}
+
+// ==============================================================================
+// - Init hardware
+// ------------------------------------------------------------------------------
+void initCoreHardware(void)
+{
+	// --------------------- Init AD Converter
+  
+	sbi(ADCSRA, ADEN);				// enable ADC (turn on ADC power)
+	//		cbi(ADCSRA, ADATE);				// default to single sample convert mode
+									// Set ADC-Prescaler (-> precision vs. speed)
+	ADCSRA = ((ADCSRA & ~ADC_PRESCALE_MASK) | ADC_PRESCALE_DIV64);
+	sbi(ADMUX,REFS0);cbi(ADMUX,REFS1);			// Set ADC Reference Voltage to AVCC
+				
+	cbi(ADCSRA, ADLAR);				// set to right-adjusted result
+	//	sbi(ADCSRA, ADIE);				// enable ADC interrupts
+	cbi(ADCSRA, ADIE);				// disable ADC interrupts
+  
+	// --------------------- Init USB
+	
+	// set PORT D Directions -> 1110 0000, output 0 on unconnected PD7
+	DDRD = 0xe2; 	// 1110 0000 -> set PD0..PD4 to inputs -> USB pins
+	PORTD = 0x00; 	// set Pullup for Bootloader Jumper, no pullups on USB pins -> 0111 0000
+
+	//	usbDeviceConnect();
+	//wdt_enable(WDTO_1S);	// enable watchdog timer
+	usbReset();
+	usbInit();
+	sei();		// turn on interrupts
+}
+

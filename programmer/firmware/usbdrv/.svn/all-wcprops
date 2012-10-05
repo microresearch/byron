@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/usbdrv
+END
+usbdrvasm.asm
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/usbdrv/usbdrvasm.asm
+END
+usbdrv.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/usbdrv/usbdrv.c
+END
+oddebug.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/usbdrv/oddebug.c
+END
+usbdrv.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/usbdrv/usbdrv.h
+END
+CommercialLicense.txt
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/usbdrv/CommercialLicense.txt
+END
+oddebug.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/usbdrv/oddebug.h
+END
+License.txt
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/usbdrv/License.txt
+END
+usbdrvasm165.S
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/usbdrv/usbdrvasm165.S
+END
+USBID-License.txt
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/usbdrv/USBID-License.txt
+END
+iarcompat.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/usbdrv/iarcompat.h
+END
+Changelog.txt
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/usbdrv/Changelog.txt
+END
+usbdrvasm.S
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/usbdrv/usbdrvasm.S
+END
+usbconfig-prototype.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/usbdrv/usbconfig-prototype.h
+END
+usbdrvasm12.S
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/usbdrv/usbdrvasm12.S
+END
+Readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/usbdrv/Readme.txt
+END
+usbdrvasm16.S
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/micro_research/!svn/ver/158/trunk/byron/programmer/firmware/usbdrv/usbdrvasm16.S
+END

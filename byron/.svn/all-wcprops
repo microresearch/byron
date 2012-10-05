@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/micro_research/!svn/ver/157/trunk/byron/byron
+END
+byron.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/micro_research/!svn/ver/163/trunk/byron/byron/byron.h
+END
+main.o
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/micro_research/!svn/ver/198/trunk/byron/byron/main.o
+END
+byron_cmds.h~
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/micro_research/!svn/ver/163/trunk/byron/byron/byron_cmds.h~
+END
+byron_cmds.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/micro_research/!svn/ver/186/trunk/byron/byron/byron_cmds.h
+END
+byron.o
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/micro_research/!svn/ver/183/trunk/byron/byron/byron.o
+END
+main.bin
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/micro_research/!svn/ver/198/trunk/byron/byron/main.bin
+END
+gnusb.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/micro_research/!svn/ver/158/trunk/byron/byron/gnusb.c
+END
+Makefile.main
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/micro_research/!svn/ver/158/trunk/byron/byron/Makefile.main
+END
+Makefile.bac
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/micro_research/!svn/ver/158/trunk/byron/byron/Makefile.bac
+END
+gnusb.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/micro_research/!svn/ver/158/trunk/byron/byron/gnusb.h
+END
+usbconfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/micro_research/!svn/ver/182/trunk/byron/byron/usbconfig.h
+END
+main.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/micro_research/!svn/ver/198/trunk/byron/byron/main.c
+END
+main.hex
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/micro_research/!svn/ver/198/trunk/byron/byron/main.hex
+END
+byron.c~
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/micro_research/!svn/ver/163/trunk/byron/byron/byron.c~
+END
+byron.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/micro_research/!svn/ver/178/trunk/byron/byron/byron.c
+END
+gnusb_cmds.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/micro_research/!svn/ver/159/trunk/byron/byron/gnusb_cmds.h
+END
+byron.h~
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/micro_research/!svn/ver/163/trunk/byron/byron/byron.h~
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/micro_research/!svn/ver/178/trunk/byron/byron/Makefile
+END
